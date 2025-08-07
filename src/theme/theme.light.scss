@@ -66,7 +66,8 @@ html {
 
     --core-input-stroke: var(--gray-500);
     --core-input-text: var(--dark);
-    --core-input-background: var(--ion-background-color);
+    // --core-input-background: var(--ion-background-color);
+    --core-input-background: var(--background-color);
     --core-input-radius: var(--radius-xs);
     --core-input-border-width: 1px;
 
@@ -112,7 +113,8 @@ html {
     --ion-placeholder-color: var(--subdued-text-color);
 
     ion-content {
-        --background: var(--ion-background-color);
+        // --background: var(--ion-background-color);
+        --background: #E0E9F0;
         --background-alternative: var(--gray-200);
     }
 
@@ -137,13 +139,16 @@ html {
     }
 
     --core-header-toolbar-button-image-size: var(--a11y-min-target-size);
-    --core-header-toolbar-background: var(--white);
+    // --core-header-toolbar-background: var(--white);
+    --core-header-toolbar-background: -webkit-linear-gradient(135deg,rgb(245, 130, 32) 0%,rgb(109, 174, 218) 100%)!important;
     --core-header-toolbar-border-width: 0px;
     --core-header-toolbar-border-color: var(--stroke);
-    --core-header-toolbar-color: var(--text-color);
+    // --core-header-toolbar-color: var(--text-color);
+    --core-header-toolbar-color: var(--white);
     --core-header-toolbar-height: 48px;
     --core-header-shadow: none;
-    --core-header-buttons-background: var(--core-header-toolbar-background);
+    // --core-header-buttons-background: var(--core-header-toolbar-background);
+    --core-header-buttons-background: transparent;
     --core-header-buttons-color: var(--core-header-toolbar-color);
 
     ion-header, ion-header.header-md {
@@ -152,7 +157,8 @@ html {
 
         ion-toolbar {
             --color: var(--core-header-toolbar-color);
-            --background: var(--core-header-toolbar-background);
+            // --background: var(--core-header-toolbar-background);
+            --background: -webkit-linear-gradient(120deg,rgb(245, 130, 32) 20%,rgb(109, 174, 218) 70%);
             --border-width: 0 0 var(--core-header-toolbar-border-width) 0;
             --border-color: var(--core-header-toolbar-border-color);
 
@@ -181,7 +187,8 @@ html {
         --border-width: 0 0 var(--core-header-toolbar-border-width) 0;
     }
 
-    --ion-searchbar-background: var(--ion-background-color);
+    // --ion-searchbar-background: var(--ion-background-color);
+    --ion-searchbar-background: var(--background-color);
     --ion-searchbar-border-color: var(--core-input-stroke);
     --ion-searchbar-border-radius: var(--core-input-radius);
     --ion-searchbar-height: var(--a11y-min-target-size);
@@ -197,7 +204,9 @@ html {
         --height: var(--ion-searchbar-height);
     }
 
-    --core-search-box-background: var(--ion-background-color);
+    // --core-search-box-background: var(--ion-background-color);
+    --core-search-box-background: var(--background-color);
+
     --core-search-box-border-color: var(--core-input-stroke);
     --core-search-box-border-radius: var(--core-input-radius);
     --core-search-box-color: var(--core-input-text);
@@ -321,8 +330,11 @@ html {
 
     --background-gradient-rgb: #{$ion-item-background-rgb};
 
-    --core-login-background: var(--white);
-    --core-login-text-color: var(--gray-900);
+  // --core-login-background: var(--white);
+  --core-login-background: -webkit-linear-gradient(120deg,rgb(245, 130, 32) 20%,rgb(109, 174, 218) 70%)!important;
+  // --core-login-text-color: var(--gray-900);
+  --core-login-text-color: var(--white);
+
     --core-login-input-background: var(--white);
     --core-login-input-color: var(--gray-900);
 

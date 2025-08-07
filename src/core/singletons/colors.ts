@@ -98,7 +98,7 @@ export class CoreColors {
             return '';
         }
 
-        const hex = [0,1,2].map(
+        const hex = [0, 1, 2].map(
             (idx) => this.componentToHex(rgba[idx]),
         ).join('');
 
@@ -153,7 +153,7 @@ export class CoreColors {
         if (color.length === 3) {
             color = color.charAt(0) + color.charAt(0) + color.charAt(1) + color.charAt(1) + color.charAt(2) + color.charAt(2);
         } else if (color.length !== 6) {
-            throw('Invalid hex color: ' + color);
+            throw ('Invalid hex color: ' + color);
         }
 
         return {
@@ -193,16 +193,16 @@ export class CoreColors {
      * @returns Color in hex format.
      */
     static getToolbarBackgroundColor(): string {
-        const element = document.querySelector('ion-header ion-toolbar');
-        let color: string;
+        // const element = document.querySelector('ion-header ion-toolbar');
+        const color = '#000000';
 
-        if (element) {
-            color = getComputedStyle(element).getPropertyValue('--background').trim();
-        } else {
-            // Fallback, it won't always work.
-            color = getComputedStyle(document.body).getPropertyValue('--core-header-toolbar-background').trim();
-        }
-
+        // if (element) {
+        //     color = getComputedStyle(element).getPropertyValue('--background').trim();
+        // } else {
+        //     // Fallback, it won't always work.
+        //     color = getComputedStyle(document.body).getPropertyValue('--core-header-toolbar-background').trim();
+        // }
+        // color = '#000000';
         return CoreColors.getColorHex(color);
     }
 

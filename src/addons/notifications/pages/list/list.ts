@@ -42,6 +42,7 @@ import { AddonLegacyNotificationsNotificationsSource } from '@addons/notificatio
 })
 export class AddonNotificationsListPage implements AfterViewInit, OnDestroy {
 
+    siteName = '';
     @ViewChild(CoreSplitViewComponent) splitView!: CoreSplitViewComponent;
     notifications!: CoreListItemsManager<AddonNotificationsNotificationMessageFormatted, AddonNotificationsNotificationsSource>;
     fetchMoreNotificationsFailed = false;
@@ -53,6 +54,12 @@ export class AddonNotificationsListPage implements AfterViewInit, OnDestroy {
     protected readObserver?: CoreEventObserver;
     protected pushObserver?: Subscription;
     protected pendingRefresh = false;
+    /**
+     * Load the site name.
+     */
+    protected async loadSiteName(): Promise<void> {
+        this.siteName = await CoreSites.getRequiredCurrentSite().getSiteName() || '';
+    }
 
     constructor() {
         try {
@@ -64,10 +71,11 @@ export class AddonNotificationsListPage implements AfterViewInit, OnDestroy {
             );
 
             this.notifications = new CoreListItemsManager(source, AddonNotificationsListPage);
-        } catch(error) {
+        } catch (error) {
             CoreDomUtils.showErrorModal(error);
             CoreNavigator.back();
         }
+        this.loadSiteName();
     }
 
     /**

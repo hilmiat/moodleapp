@@ -1,42 +1,36 @@
 {
   "project_info": {
-    "project_number": "",
-    "firebase_url": "",
-    "project_id": "",
-    "storage_bucket": ""
+    "project_number": "218326195468",
+    "project_id": "kobusacademy-4fa19",
+    "storage_bucket": "kobusacademy-4fa19.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:111111111111:android:1111111111111111",
+        "mobilesdk_app_id": "1:218326195468:android:4d376a5fdba588218afd29",
         "android_client_info": {
-          "package_name": "com.moodle.moodlemobile"
+          "package_name": "id.kobusacademy.app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "",
+          "client_id": "218326195468-vk586g1b74qpet76bk371u5f5ucvmvvb.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": ""
-        },
-        {
-          "current_key": ""
+          "current_key": "AIzaSyD1tqqe5obj8wmJUz5tw5He-msPEeKxf3k"
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
+          "other_platform_oauth_client": [
+            {
+              "client_id": "218326195468-vk586g1b74qpet76bk371u5f5ucvmvvb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

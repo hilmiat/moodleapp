@@ -8,6 +8,16 @@
         --color: var(--core-login-text-color);
     }
 
+    ion-toolbar.login {
+        --background: rgb(109, 174, 218);
+    }
+    .core-login-login-button{
+        margin-left: 0px;
+        margin-right: 0px;
+        overflow: hidden;
+        border-radius: 25px !important;
+    }
+
     ion-item ion-label {
         --color: var(--core-login-text-color);
 
